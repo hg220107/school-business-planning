@@ -21,19 +21,20 @@
         <img src="images/targets.svg" class="image-targets">
     </div>
     <!-- Targets input boxes -->
-    <div class="input-container">
-        <p>Enter under 18s students target:</p>
-        <input id="under18sTarget" type="number" min="0" placeholder="Enter target">
-    </div>
-    <div class="input-container">
-        <p>Enter adults students target:</p>
-        <input id="adultsTarget" type="number" min="0" placeholder="Enter target">
-    </div>
-    <!-- SUBMIT button -->
-    <div class="button-container">
-        <button onclick="setTargets()" class="button start-button">SUBMIT</button>
-    </div>
+    <form onsubmit="setTargets(); return false">
+        <div class="input-container">
+            <p>Enter under 18s students target:</p>
+            <input id="under18sTarget" type="number" min="0" placeholder="Enter target" required autofocus>
+        </div>
+        <div class="input-container">
+            <p>Enter adults students target:</p>
+            <input id="adultsTarget" type="number" min="0" placeholder="Enter target" required autofocus>
+        </div>
+        <!-- SUBMIT button -->
+        <div class="button-container">
+            <button type="submit" class="button">SUBMIT</button>
+        </div>
+    </form>
 </body>
 <script src="shared.js"></script>
-
 </html>
