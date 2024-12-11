@@ -1,33 +1,73 @@
+/* Default margins and padding */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .banner {
-    background-color: #13AE85;
-    color: #ffffff;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-  }
-  
-  .banner h1 {
-    font-size: 2.5rem;
-  }
-  
-  .banner p {
-    font-size: 1.2rem;
-  }
-  
-  .help {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 70px;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/* Global font styling*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header styling for all pages */
+.header {
+  background-color: #13AE85;
+  color: #ffffff;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* Help icon styling*/
+.help {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+}
+
+/* Default image containers styling */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-charts {
+  padding: 1%;
+  max-width: 50%;
+  height: auto;
+}
+
+/* Default navigation buttons container styling */
+.button-container {
+  text-align: center;
+}
+
+.start-container {
+  margin-top: 50px;
+}
+
+/* Default navigation buttons styling */
+.navigation-button {
+  background-color: #748efe;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 90px;
+}
+
+.start-button {
+  padding: 15px 100px;
+  font-size: 3rem;
+}
