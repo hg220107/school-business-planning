@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Header styling for all pages */
+/* Header styling */
 .header {
   background-color: #13AE85;
   color: #ffffff;
@@ -36,7 +36,7 @@ body {
   height: 70px;
 }
 
-/* Default image containers styling */
+/* Image containers styling */
 .image-container {
   display: flex;
   flex-direction: column;
@@ -44,30 +44,41 @@ body {
   justify-content: center;
 }
 
+/* Specific images styling */
 .image-charts {
   padding: 1%;
   max-width: 50%;
   height: auto;
 }
 
-/* Default navigation buttons container styling */
-.button-container {
-  text-align: center;
+.image-targets {
+  padding: 1%;
+  max-width: 20%;
+  height: auto;
 }
 
-.start-container {
+/* Buttons container styling */
+.button-container {
+  text-align: center;
   margin-top: 50px;
 }
 
-/* Default navigation buttons styling */
-.navigation-button {
+/* Buttons styling */
+.button {
+  padding: 15px 100px;
   background-color: #748efe;
   color: #ffffff;
   text-decoration: none;
   border-radius: 90px;
+  font-size: 3rem;
 }
 
-.start-button {
-  padding: 15px 100px;
-  font-size: 3rem;
+/* Inputs container styling */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
