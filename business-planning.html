@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Business Planning</title>
+    <!-- Get font style and CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Web page header -->
+    <div class="header">
+        <!-- Help button -->
+        <a href="https://github.com/hg220107/school-business-planning/blob/main/README.md" target="_blank">
+            <img src="images/help.svg" class="help">
+        </a>
+        <h1>School Business Planning</h1>
+        <p>Plan your student numbers for the next academic year</p>
+    </div>
+    <!-- Total Cards -->
+    <div class="total-cards">
+        <div>
+            <p>Total Under 18s</p>
+            <h2 id="totalUnder18s">0</h2>
+        </div>
+        <div>
+            <p>Total Adults</p>
+            <h2 id="totalAdults">0</h2>
+        </div>
+        <div>
+            <p>Under 18s Target</p>
+            <input type="number" id="targetUnder18s" min="0">
+        </div>
+        <div>
+            <p>Adults Target</p>
+            <input type="number" id="targetAdults" min="0">
+        </div>
+        <div>
+            <p>Under 18s Planned%</p>
+            <h2 id="under18sPlannedPercentage">0</h2>
+        </div>
+        <div>
+            <p>Adults Planned%</p>
+            <h2 id="adultsPlannedPercentage">0</h2>
+        </div>
+    </div>
+    <!-- Business planning table -->
+    <table id="businessPlanningTable" border="1">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Title</th>
+                <th>Under 18 Students</th>
+                <th>Adult Students</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows added dynamically here -->
+        </tbody>
+    </table>
+    <!-- Add row button -->
+    <button class="button add-row" onclick="addRow()">Add Row</button>
+    <script src="business-planning.js"></script>
+</body>
+</html>

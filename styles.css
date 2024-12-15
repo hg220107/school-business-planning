@@ -1,39 +1,40 @@
+/* Default font size */
+html {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Default margins and padding */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Global font styling*/
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 /* Header styling */
 .header {
   background-color: #13AE85;
   color: #ffffff;
-  padding: 5px;
+  padding: 0.5rem;
   position: relative;
   text-align: center;
 }
 
 .header h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-/* Help icon styling*/
+/* Help icon styling */
 .help {
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 1rem;
   transform: translateY(-50%);
-  width: 70px;
-  height: 70px;
 }
 
 /* Image containers styling */
@@ -46,39 +47,82 @@ body {
 
 /* Specific images styling */
 .image-charts {
-  padding: 1%;
-  max-width: 50%;
-  height: auto;
-}
-
-.image-targets {
-  padding: 1%;
-  max-width: 20%;
+  max-width: 30%;
   height: auto;
 }
 
 /* Buttons container styling */
 .button-container {
+  margin-top: 3.5rem;
   text-align: center;
-  margin-top: 50px;
+  /* 48px */
 }
 
-/* Buttons styling */
+/* Default button styling */
 .button {
-  padding: 15px 100px;
   background-color: #748efe;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 90px;
+  border-radius: 2rem;
+}
+
+/* Specific buttons styling */
+.start {
+  padding: 0.5rem 3rem;
   font-size: 3rem;
 }
 
-/* Inputs container styling */
-.input-container {
+.add-row {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-size: 1rem;
+}
+
+/* Total cards styling */
+.total-cards {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.total-cards div {
+  padding: 0.5rem;
+
+}
+
+.total-cards h2 {
+  font-size: 2.5rem;
+}
+
+.total-cards input {
+  height: 1em;
+  width: 8rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Table styling */
+table {
+  width: 99%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0rem auto;
+}
+
+table th {
+  padding: 0.5rem;
+  background-color: #748efe;
+  color: #ffffff;
+}
+
+table td {
+  text-align: center;
+}
+
+table input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
